@@ -24,7 +24,7 @@ Notibubble ("uygulama"), telefonuna gelen bildirimleri ekranda yüzen baloncukla
 
 - Uygulamanın kendine ait bir sunucusu yoktur. Verilerin satılmaz, reklam için kullanılmaz. Telefondan çıkan bilgiler yalnızca bu sayfada yazılanlardır ve hepsi senin açtığın ya da bastığın özelliklerle olur.
 
-- Uygulamada reklam ya da izleme aracı yoktur. Yalnızca çökme raporları için Firebase Crashlytics kullanılır (aşağıda).
+- Uygulamada reklam ya da izleme aracı yoktur. Yalnızca, sen açarsan çökme raporları için Firebase Crashlytics kullanılır (aşağıda).
 
 - Notibubble, Android'in otomatik uygulama yedeklemesine kapalıdır; ayarların, geçmişin ve mesaj kilidi bilgilerin bu yolla Google hesabına aktarılmaz. Mesaj kilidi (PIN/desen) ve satın alma hakları Drive yedeğine de dahil edilmez, yalnızca telefonunda kalır.
 
@@ -38,7 +38,7 @@ Araçlar'daki "Hata bildir" düğmesine basarsan e-posta uygulamanda geliştiric
 
 ## Çökme raporları (Firebase Crashlytics)
 
-Uygulama çökerse, bir sonraki açılışta Google'ın Firebase Crashlytics hizmetine otomatik bir çökme raporu gönderilir. Raporda hatanın teknik kaydı, telefon modeli, Android sürümü, uygulama sürümü ve çökme anındaki cihaz durumu (ör. bellek, pil, yön) ile uygulamaya özel rastgele bir kimlik bulunur. Bildirim içeriklerin, mesajların, adın ya da hesap bilgilerin rapora eklenmez. Raporlar yalnızca hataları bulup düzeltmek için kullanılır, kimseyle paylaşılmaz ve 90 gün sonra otomatik olarak silinir. Google'ın bu verileri nasıl işlediği için: https://firebase.google.com/support/privacy
+Bu özellik fabrikadan kapalıdır. Yalnızca Ayarlar'daki "Bize yardım et: otomatik çökme raporu" anahtarını açarsan, uygulama çöktüğünde bir sonraki açılışta Google'ın Firebase Crashlytics hizmetine otomatik bir çökme raporu gönderilir. Anahtar kapalıyken hiçbir rapor gönderilmez; istediğin zaman kapatabilirsin. Raporda hatanın teknik kaydı, telefon modeli, Android sürümü, uygulama sürümü ve çökme anındaki cihaz durumu (ör. bellek, pil, yön) ile uygulamaya özel rastgele bir kimlik bulunur. Bildirim içeriklerin, mesajların, adın ya da hesap bilgilerin rapora eklenmez. Raporlar yalnızca hataları bulup düzeltmek için kullanılır, kimseyle paylaşılmaz ve 90 gün sonra otomatik olarak silinir. Google'ın bu verileri nasıl işlediği için: https://firebase.google.com/support/privacy
 
 ## Yanıt gönderme
 
@@ -112,7 +112,7 @@ Notibubble ("the app") is an Android app that shows the notifications you receiv
 
 - The app has no server of its own. Your data is not sold or used for ads. The only information that leaves your phone is described on this page, and it only happens through features you turn on or tap.
 
-- The app contains no ads or tracking tools. Firebase Crashlytics is used only for crash reports (see below).
+- The app contains no ads or tracking tools. Firebase Crashlytics is used only for crash reports, and only if you turn it on (see below).
 
 - Notibubble opts out of Android's automatic app backup, so settings, history and message-lock data are not copied to your Google account that way. The message lock (PIN/pattern) and purchase entitlements are also excluded from the Drive backup and stay only on your phone.
 
@@ -126,7 +126,7 @@ If you tap "Report a bug" in Tools, an email to the developer (dekorher@gmail.co
 
 ## Crash reports (Firebase Crashlytics)
 
-If the app crashes, an automatic crash report is sent to Google's Firebase Crashlytics service the next time it opens. The report contains the technical error log, phone model, Android version, app version, device state at the time of the crash (e.g. memory, battery, orientation) and a random app-specific identifier. Your notification contents, messages, name or account details are not included. Reports are used only to find and fix bugs, are not shared with anyone and are deleted automatically after 90 days. How Google handles this data: https://firebase.google.com/support/privacy
+This feature is off by default. Only if you turn on "Help us: automatic crash reports" in Settings, a crash report is sent to Google's Firebase Crashlytics service the next time the app opens after a crash. While the switch is off, nothing is sent; you can turn it off at any time. The report contains the technical error log, phone model, Android version, app version, device state at the time of the crash (e.g. memory, battery, orientation) and a random app-specific identifier. Your notification contents, messages, name or account details are not included. Reports are used only to find and fix bugs, are not shared with anyone and are deleted automatically after 90 days. How Google handles this data: https://firebase.google.com/support/privacy
 
 ## Sending replies
 
