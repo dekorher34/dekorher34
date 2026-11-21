@@ -2,7 +2,7 @@
 
 Yapımcı / Developer: Dekorher · dekorher@gmail.com
 
-Son güncelleme / Last updated: 17 Kasım 2026 / November 17, 2026
+Son güncelleme / Last updated: 21 Kasım 2026 / November 21, 2026
 
 
 
@@ -66,7 +66,7 @@ Notibubble Pro (ömür boyu paket) Google Play üzerinden satılır. Ödeme bilg
 
 - Bildirim gönderme ve ön plan hizmeti: uygulamanın arka planda çalıştığını gösteren kalıcı bildirim için.
 
-- **İnternet:** yalnızca Google Drive yedeği, Google Play satın almaları ve açarsan hava durumu için. Hava durumu için yazdığın şehir adı ve bulunan koordinat, hava bilgisini almak üzere Open-Meteo'ya (open-meteo.com) gönderilir; başka bir bilgi gönderilmez.
+- **İnternet:** yalnızca Google Drive yedeği, Google Play satın almaları ve açarsan çökme raporları için. Başka hiçbir yere bağlanılmaz.
 
 - Açılışta başlatma: telefon yeniden başlayınca baloncukların çalışmaya devam etmesi için.
 
@@ -154,7 +154,7 @@ Notibubble Pro (lifetime pack) is sold through Google Play. Payment details are 
 
 - Post notifications and foreground service: for the persistent notification showing the app is running.
 
-- **Internet:** only for Google Drive backup, Google Play purchases and, if you turn it on, the weather. For the weather, the city name you type and its coordinates are sent to Open-Meteo (open-meteo.com) to get the forecast; nothing else is sent.
+- **Internet:** only for Google Drive backup, Google Play purchases and, if you turn them on, crash reports. The app connects nowhere else.
 
 - Run at startup: so bubbles keep working after the phone restarts.
 
