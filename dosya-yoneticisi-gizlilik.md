@@ -2,7 +2,7 @@
 
 Yapımcı / Developer: Dekorher · dekorher@gmail.com
 
-Son güncelleme / Last updated: 21 Kasım 2026 / November 21, 2026
+Son güncelleme / Last updated: 23 Kasım 2026 / November 23, 2026
 
 
 
@@ -25,9 +25,20 @@ Dekorher Studio Dosyalar ("uygulama"), telefonundaki dosyaları gezmeni, açman�
 - Düzenlediğin fotoğraflar telefonuna yeni bir kopya olarak kaydedilir.
 - Sildiğin dosyalar, varsa, uygulamanın çöp kutusuna taşınır; çöp kutusu da telefonunda durur.
 
+## Uygulama kurma ve kaldırma
+
+- **Paket yükleme izni (REQUEST_INSTALL_PACKAGES):** Telefonundaki bir APK dosyasına dokunup "Kur" dediğinde, kurulumu Android'in kendi kurulum ekranına iletmek için kullanılır. Uygulama kendi başına hiçbir şey indirmez ya da kurmaz; kurulumu her zaman sen onaylarsın.
+- **Paket silme izni (REQUEST_DELETE_PACKAGES):** "Yüklü uygulamalar" ekranında bir uygulamayı kaldırmak istediğinde Android'in kaldırma ekranını açmak için kullanılır. Kaldırmayı her zaman sen onaylarsın.
+- Yüklü uygulamalar listesi yalnızca ekranda gösterilir; hiçbir yere gönderilmez.
+
+## Kişisel Kasa
+
+- Kasaya koyduğun dosyalar telefonunda **şifrelenerek** saklanır. Şifreleme anahtarı Android'in güvenli anahtar deposunda (Android Keystore) tutulur ve telefondan çıkmaz.
+- Kasa içeriği hiçbir yere gönderilmez. Uygulamayı silersen kasadaki dosyalar da silinir; önce kasadan çıkarmayı unutma.
+
 ## Telefonda saklananlar
 
-- Ayarların (görünüm, sıralama gibi tercihler), son açılan dosyalar listesi ve küçük resim önbelleği yalnızca telefonunda saklanır. Uygulamayı silince bunlar da silinir.
+- Ayarların (görünüm, sıralama, dil gibi tercihler), son açılan dosyalar listesi, son 100 dosya işleminin geçmişi ve küçük resim önbelleği yalnızca telefonunda saklanır. Uygulamayı silince bunlar da silinir.
 
 ## Paylaşma ve başka uygulamada açma
 
@@ -70,9 +81,20 @@ Dekorher Studio Dosyalar ("the app") is a file manager that lets you browse, ope
 - Photos you edit are saved to your phone as a new copy.
 - Files you delete are moved to the app's trash where available; the trash also stays on your phone.
 
+## Installing and removing apps
+
+- **Request install packages (REQUEST_INSTALL_PACKAGES):** When you tap an APK file on your phone and choose "Install", the app hands the installation to Android's own installer screen. The app never downloads or installs anything by itself; you always confirm the installation.
+- **Request delete packages (REQUEST_DELETE_PACKAGES):** When you choose to remove an app on the "Installed apps" screen, Android's own uninstall screen is opened. You always confirm the removal.
+- The installed apps list is only shown on screen; it is never sent anywhere.
+
+## Personal Vault
+
+- Files you put in the vault are stored **encrypted** on your phone. The encryption key is kept in Android's secure key store (Android Keystore) and never leaves the phone.
+- Vault contents are never sent anywhere. If you uninstall the app, the vault files are deleted too, so move them out of the vault first.
+
 ## Stored on your phone
 
-- Your settings (view and sorting preferences), the recent files list and the thumbnail cache are stored only on your phone. They are removed when you uninstall the app.
+- Your settings (view, sorting and language preferences), the recent files list, the history of the last 100 file operations and the thumbnail cache are stored only on your phone. They are removed when you uninstall the app.
 
 ## Sharing and opening in another app
 
